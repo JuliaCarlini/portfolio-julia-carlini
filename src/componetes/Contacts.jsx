@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import Header from "./sub-components/Header";
-import './Contacts.css'; // Crie este arquivo
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import animacao from "../img/animacao.mp4"
 
 const Contacts = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -27,6 +29,30 @@ const Contacts = () => {
                     <button type="submit">Enviar</button>
                 </form>
             </section>
+
+            <div className="div-icons">
+                            <video className="animacao-icons" autoPlay loop muted playsInline>
+                                <source src={animacao} type="video/mp4" />
+                                Seu navegador não suporta vídeo. {/* Fallback */}
+                            </video>
+            
+                            <section className="section-icons">
+                                <a href="https://github.com/JuliaCarlini" aria-label="GitHub">
+                                    <FaGithub />
+                                </a>
+                                <a href="https://www.instagram.com/carlini.julia/" aria-label="Instagram">
+                                    <FaInstagram />
+                                </a>
+                                <a href="https://www.linkedin.com/in/julia-carlini" aria-label="LinkedIn">
+                                    <FaLinkedin />
+                                </a>
+                                <a href="mailto:info@julia.dornelas.com" aria-label="Email">
+                                    <MdEmail />
+                                </a>
+                            </section>
+            
+                          
+                        </div>
         </div>
     );
 };

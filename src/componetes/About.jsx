@@ -1,15 +1,36 @@
 import React from "react";
-import Header from "./sub-components/Header";
-import './About.css'; // Crie este arquivo
+import iconf1 from "../img/iconf1.png";
+import iconf2 from "../img/iconf2.JPG"
 
 const About = () => {
     return (
         <div>
             <section className="about-section">
-                <img src="https://via.placeholder.com/150" alt="Foto de Julia Carlini" /> {/* Substitua */}
                 <div className="about-text">
-                    <h2>Sobre Mim</h2>
-                    <p>Olá, sou Julia Carlini, uma desenvolvedora web apaixonada por frontend. Lorem ipsum dolor sit amet. Cum Quis recusandae qui voluptatem enim At dolor provident eum voluptatem beatae. Especializo-me em HTML, CSS, JavaScript e frameworks como React.</p>
+                    <p className="about-titulo">Quem sou e o que faço</p>
+                    <p className="about-p">O meu nome é Julia Carlini,
+                    E eu amooo minha namorada ela é a menina mais linda do mundo e amo ela muito e vou pedir ela em casamento daqui a uns anos e vai ser lindo te amo momo (mudar...kkkk)</p>
+                </div>
+            </section>
+
+            <section className="about-card">
+                <h1>ESTUDOS ADQUIRIDOS</h1>
+                 <div className="projects-grid">
+                        <div  className="project-card">
+                            <img src={iconf1}/>
+                            <p>TESP Cibersegurança e Redes Informaticas</p>
+                            <h3>Politecnico de Leiria</h3>
+                        </div>
+                        <div  className="project-card">
+                            <img src={iconf2}/>
+                            <p>WEB Desing</p>
+                            <h3>Udemy</h3>
+                        </div>
+                        <div  className="project-card">
+                            <img src={iconf2}/>
+                            <p>React + Redux</p>
+                            <h3>Udemy</h3>
+                        </div>
                 </div>
             </section>
         </div>

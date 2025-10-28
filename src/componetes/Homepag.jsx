@@ -1,10 +1,10 @@
 import React from "react";
-import './Homepag.css';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { useNavigate } from 'react-router-dom'; // Adicione se não estiver no Header
-import Header from "./sub-components/Header";
+import processador from "../img/processador.jpg";
+import animacao from "../img/animacao.mp4"
 
 const Homepag = () => {
     const navigate = useNavigate();
@@ -16,6 +16,23 @@ const Homepag = () => {
     return (
         <div>
             <div className="pag-p">
+                <section className="text-p">
+                    <h1>Olá, sou a Julia <br />
+                    Carlini.</h1>
+                    <p>Desenvolvedora Web + <br />
+Recém licenciada em Cybersegurança e <br /> Redes informáticas</p>
+                    <button onClick={goToProjects}>Veja o meu portfólio</button>
+                </section>
+
+                <img className="pag-img" src={processador} alt="" />
+            </div>
+
+            <div className="div-icons">
+                <video className="animacao-icons" autoPlay loop muted playsInline>
+                    <source src={animacao} type="video/mp4" />
+                    Seu navegador não suporta vídeo. {/* Fallback */}
+                </video>
+
                 <section className="section-icons">
                     <a href="https://github.com/JuliaCarlini" aria-label="GitHub">
                         <FaGithub />
@@ -30,12 +47,8 @@ const Homepag = () => {
                         <MdEmail />
                     </a>
                 </section>
-                <section className="text-p">
-                    <h1>Hi, I'm Julia Carlini</h1>
-                    <h2>Web Developer</h2>
-                    <p>Lorem ipsum dolor sit amet. Cum Quis recusandae qui voluptatem enim At dolor provident eum voluptatem beatae. Especializo-me em React, HTML, CSS e JavaScript.</p>
-                    <button onClick={goToProjects}>Projects</button>
-                </section>
+
+                <p className="sections-icons-p">Contatos</p>
             </div>
         </div>
     );

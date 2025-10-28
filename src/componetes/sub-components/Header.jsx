@@ -1,7 +1,6 @@
 import {useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import React from "react";
-import './Header.css';
 import myImg from '../../perfil-cv.png';
 
 const Header = () => {
@@ -23,7 +22,7 @@ const IrContacts = () => {
 return(
     <header>
         <img className="my-img" src={myImg} alt="my-Img" />
-        <p>Julia Carlini</p>
+        <p className='header-p'>Julia Carlini</p>
 
         <button className={`toggle-btn ${isOpen ? "open" : ""}`} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? "×" : "☰"}

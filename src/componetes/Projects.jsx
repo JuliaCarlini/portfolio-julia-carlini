@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "./sub-components/Header";
-import './Projects.css'; // Crie este arquivo CSS
 
 const Projects = () => {
     const projects = [

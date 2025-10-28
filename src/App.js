@@ -4,6 +4,7 @@ import Homepag from "./componetes/Homepag";
 import About from "./componetes/About";
 import Projects from "./componetes/Projects";
 import Contacts from "./componetes/Contacts";
+import "./style.css";
 
 function App() {
   return (
