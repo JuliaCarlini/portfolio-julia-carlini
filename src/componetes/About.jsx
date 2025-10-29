@@ -1,6 +1,6 @@
 import React from "react";
 import iconf1 from "../img/iconf1.png";
-import iconf2 from "../img/iconf2.JPG"
+import iconf2 from "../img/iconf2.png"
 
 const About = () => {
     return (
@@ -8,9 +8,12 @@ const About = () => {
             <section className="about-section">
                 <div className="about-text">
                     <p className="about-titulo">Quem sou e o que faço</p>
-                    <p className="about-p">O meu nome é Julia Carlini,
-                    E eu amooo minha namorada ela é a menina mais linda do mundo e amo ela muito e vou pedir ela em casamento daqui a uns anos e vai ser lindo te amo momo (mudar...kkkk)</p>
+                    <p className="about-p">O meu nome é Julia Carlini, <br />
+                    Sou uma profissional apaixonada por tecnologia, com foco em cibersegurança e desenvolvimento web. Tenho como propósito criar soluções seguras, funcionais e inovadoras, sempre buscando entender a fundo cada detalhe. </p>
+                    <p className="about-p">Além da área tech, sou atleta de alto rendimento em kickboxing, o que moldou minha forma de pensar e agir: disciplina, estratégia e foco são valores que levo tanto para o tatame quanto para o código. Acredito que performance e precisão são conquistadas com treino constante.</p>
                 </div>
+
+                
             </section>
 
             <section className="about-card">
