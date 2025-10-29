@@ -231,41 +231,120 @@ nav {
 }
 
 /* About */
-.about-section {
-    display: flex;
+.about-div{
     background-color: #1b1a1a;
     min-height: 100vh;
-
- }
-
-.about-text {
-    color: white;
-    margin: 2rem;
+    padding: 40px 20px;
 }
 
 .about-titulo {
-    font-size: 1.5rem;
-    margin: 0 0 5rem;
+    font-size: 2rem;
+    margin: 0 0 3rem;
+    color: white;
 }
 
-.about-p {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    padding: 2rem 17rem 2rem 0;
+
+/* Container dos cards sobre mim */
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+ 
 }
 
-.about-card{
-    background-color:#eaeaea ;
-    padding: 2rem;
+/* Cada card individual */
+.about-card {
+  background-color: #111; /* preto do site */
+  border-left: 4px solid #8bc34a; /* verde musgo */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.about-card h1{
-    margin: 2rem;
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.6);
 }
 
-.about-card{
-    padding: 2rem;
+/* Títulos e textos */
+.about-subtitle {
+  color: #8bc34a;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
+
+.about-p, .about-list {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.6;
+  
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .about-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+
+/* Container dos cards de estudos */
+.education-section {
+  padding: 40px 20px;
+}
+
+.education-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+/* Cada card individual de estudo */
+.education-card {
+  background-color: white; /* fundo levemente mais claro que preto */
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover: efeito de zoom leve */
+.education-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+}
+
+/* Imagens */
+.education-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+/* Textos */
+.education-card p {
+  color: black;
+  font-size: 0.95rem;
+  margin: 5px 0;
+}
+
+.education-card h3 {
+  color: #8bc34a;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .education-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* Contacts */
 .contact-section {
@@ -420,3 +499,43 @@ nav {
         padding: 0.75rem;
     }
 }
+
+/* chat */
+
+.fixed-contact-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #bbed2f;
+  color: #1b1a1a;
+  padding: 12px 20px;
+  border-radius: 8px;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.about-section {
+  padding: 40px 20px;
+}
+
+.about-block {
+  margin-bottom: 30px;
+}
+
+.about-subtitle {
+  font-size: 1.4rem;
+  color: #8bc34a; /* verde musgo */
+  margin-bottom: 10px;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-list {
+  list-style: disc;
+  margin-left: 20px;
+  line-height: 1.6;
+}
+
