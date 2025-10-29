@@ -9,11 +9,21 @@ const About = () => {
                 <div className="about-text">
                     <p className="about-titulo">Quem sou e o que faço</p>
                     <p className="about-p">O meu nome é Julia Carlini, <br />
-                    Sou uma profissional apaixonada por tecnologia, com foco em cibersegurança e desenvolvimento web. Tenho como propósito criar soluções seguras, funcionais e inovadoras, sempre buscando entender a fundo cada detalhe. </p>
-                    <p className="about-p">Além da área tech, sou atleta de alto rendimento em kickboxing, o que moldou minha forma de pensar e agir: disciplina, estratégia e foco são valores que levo tanto para o tatame quanto para o código. Acredito que performance e precisão são conquistadas com treino constante.</p>
+                        apaixonada por tecnologia e atleta de alto rendimento
+                        em kick boxing. Especializo-me em <strong>desenvolvimento web</strong> e
+                        <strong> cibersegurança</strong>, unindo criatividade, método e
+                        segurança em cada projeto.
+                    </p>
+                    <p className="about-p">Minha missão é contribuir para que empresas e pessoas possam estar
+                        seguras no mundo digital — com soluções bem feitas, visuais atraentes e
+                        rígidos cuidados com proteção.
+                    </p>
+                    <p className="about-p">Como atleta, desenvolvi disciplina, resiliência e foco — valores que
+                        aplico em código e infraestrutura. Se você está buscando alguém que
+                        pensa no design, na funcionalidade e também na segurança, estou pronta
+                        para colaborar.
+                    </p>
                 </div>
-
-                
             </section>
 
             <section className="about-card">
